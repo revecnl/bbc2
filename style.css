@@ -15,6 +15,11 @@ img {
 	height: auto;
 }
 
+a{
+	text-decoration-line: none;
+	
+}
+
 .global-width{
 	max-width: 620px;
 	margin: 0 auto;
@@ -78,4 +83,63 @@ img {
 [data-index="5"] .bird{
 	left: 30%;
 	bottom: 30%;
+}
+
+.nav{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	padding:25px 12px;
+    font-size: 100%;
+}
+
+.top-menu{
+	display: flex;
+    justify-content: space-between;
+    align-items: center;
+	list-style: none;
+	padding-left: 0;
+}
+
+.top-menu li{
+	padding: 8px 45px;
+	font-size: 200%;
+}
+
+.main-logo{
+	width: 300px;
+	padding: 8px 12px;
+}
+
+.header{
+	text-align: center;
+
+}
+
+.main-SNS{
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.main-SNS li{
+	padding: 8px 12px;
+	font-size:300%;
+}
+
+.top-menu li:hover{
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    color: #1b1b1b;
+}
+
+.chevron{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	position: absolute;
+	font-size: 300%;
+	margin:0 auto;
+	padding-left: 10px;
 }
