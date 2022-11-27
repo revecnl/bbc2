@@ -6,14 +6,34 @@
 	<title>스타시티즌 뉴비 가이드 ver 1.0</title>
 	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/3c9b15b207.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<nav class="nav">
+		<div class="main-logo">
+			<img src="images/main_logo.png">
+		</div>
+
+		<ul class="top-menu">
+			<li><a href="a">HOME</a> </li>
+			<li><a href="a">GUIDE</a> </li>
+			<li><a href="a">INFO</a> </li>
+			<li><a href="a">BOARD</a> </li>
+			<li><a href="a">ABOUT ME</a> </li>
+		</ul>
+
+		<ul class="main-SNS">
+			<li><a href=""><i class="fa-brands fa-twitter"></i></li></a>
+			<li><a href=""><i class="fa-brands fa-instagram"></i></li></a>
+		</ul>
+	</nav>
+	<div class="chevron">
+		<div class="prev-page"><i class="fa-solid fa-chevron-left"></i></div>
+		<div class="next-page"><i class="fa-solid fa-chevron-right"></i></div>
+	</div>
 	<header class="header">
 		<div class="global-width">
-			<h1 class="page-title">스타시티즌 뉴비 가이드 ver 1.0</h1>
-			<p>
-				<h3>마이크로텍 우주공항 가는법!</h3>
-			</p>
+			<h1 class="page-title">마이크로텍 우주공항 가는법!</h1>
 		</div>
 	</header>
 	<section class="scroll-content">
@@ -21,14 +41,14 @@
 			<div class="graphic-item"><img class="scene-img" src="images/00.png" alt=""></div>
 			<!-- date- 테그 중요 -->
 			<div class="graphic-item"><img class="scene-img" src="images/01.png" alt=""></div>
-			<div class="graphic-item" data-action="birdFlies">
-				<img class="bird" src="images/bird.gif" alt="">
-				<img class="scene-img" src="images/02.gif" alt="">
+			<div class="graphic-item" data-action="birdFlies" id="rooms" onload="showimage()">
+				<img class="bird" src="" alt="">
+				<img class="scene-img" id="room" src="images/10.png" alt="">
 			</div>
 			<div class="graphic-item"><img class="scene-img" src="images/02.png" alt=""></div>
 			<div class="graphic-item"><img class="scene-img" src="images/03.png" alt=""></div>
 			<div class="graphic-item" data-action="birdFlies2">
-				<img class="bird" src="images/bird.gif" alt="">
+				<img class="bird" src="" alt="">
 				<img class="scene-img" src="images/04.png" alt="">
 			</div>
 			<div class="graphic-item"><img class="scene-img" src="images/05.png" alt=""></div>
@@ -98,15 +118,14 @@
 	</section>
 	<section class="normal-content global-width">
 		<h2>마이크로텍</h2>
-		<p>원격근무 하시는 개발자 디자이너분들, 제주로 오세요. 진짜 좋아요. Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis ullam culpa ab, laborum repellat ut quae deleniti nostrum sapiente illum!</p>
+		<p>microTech (Stanton IV)는 microTech Corporation 의 본사가 위치하고 있는 일반적으로 추운 행성입니다.<br> 낮은 온도는 UEE 테라포밍 프로세스 중 오류로 인해 비정상적으로 밀도가 높은 구름 생성으로 인하여 발생하였습니다.<br> microTech은 제국의 거의 모든 사람들이 사용하는 디지털 보조 기술의 현재 표준인 mobiGla를 여기에서 생산합니다.<br>mobiGlas가 유비쿼터스 제품이 되었지만 microTech는 선박 시스템에서 사용되는 각종 전자 제품과 Area18 을 비롯한 인구 밀도가 높은 도시 주변에 위치한 ATM을 포함하여 다양한 전자 제품을 제조합니다.<br>이 행성은 도그 파이팅 동안 우위를 제공할 수 있는 고급 센서 기술을 찾기에 좋은 곳입니다. 행성의 토지는 microTech의 일부 경쟁사를 포함하여 소규모 회사에 임대되어 최첨단 기술 연구 및 개발 장소로서의 사용되며 행성의 명성을 올리는데 기여하였습니다.</p>
 		<h2>뉴 배비지</h2>
-		<p>언택트(Untact)'란 '콘택트(contact: 접촉하다)'에서 부정의 의미인 '언(un-)을 합성한 말로, 기술의 발전을 통해 비대면으로 이루어지는 활동 경향을 의미한다. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam provident voluptatum numquam dolorum, quod odio.</p>
+		<p>얼어붙는 요소로부터 주민들을 보호하기 위해 둘러싸인 New Babbage는 microTech의 주요 사회 경제적 거래 허브입니다. microTech의 플래그십 스토어가 존재합니다.<br>
+			New Babbage 시는 microTech의 미래 혁신을 주도하는 데 필요한 고도로 숙련된 인력의 창의성을 지원하도록 설계되었습니다. Commons 와 같은 영역은 프로그래머와 엔지니어가 휴식을 취하고, 네트워크를 형성하고, 계획할 수 있는 영역을 제공하는 데 전념하는 창의적인 작업 공간으로 구성되었습니다. 도시의 활기찬 밤문화는 노동력의 긴박한 위기 시간과 평균 이상의 급여를 위한 휴식처를 제공하며, 방문하는 금융가와 벤처 캐피탈리스트는 고급 바를 정기적으로 이용합니다. 주민들은 야외 추운 날씨에도 불구하고 야외활동을 즐기기 위해 도시의 경계를 벗어나는 것을 좋아합니다.</p>
 		<h2>알아두면 좋은 정보</h2>
-		<p>똑같겠지 다를게 있나 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui impedit numquam atque quidem quos facere obcaecati deleniti labore culpa esse nostrum dicta earum rem ducimus, voluptates eligendi voluptate exercitationem dolorem!</p>
+		<p>여기에는 여러 링크를 걸어둘꺼!</p>
 	</section>
-	<footer class="global-footer">
-		<a href="https://www.youtube.com/channel/UC_s1FC7s5YVwDImzv-WG93Q" target="blank">1분코딩</a>
-	</footer>
+
 
 	<script src="main.js"></script>
 </body>
